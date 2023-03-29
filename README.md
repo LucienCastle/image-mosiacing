@@ -1,8 +1,10 @@
 # Image-mosiacing
 
 ## Abstract
+<p align="justify">
 The purpose of this project was to estimate a homography between two images by finding corresponding corners, and use it to create a mosaic between two images. In order to detect corners, the Harris corner detection algorithm was implemented. Next, correspondences were found using Normalized Cross-Correlation (NCC) between images and thresholding output values. After this, the homography from one image to another was estimated by using RANSAC to select the best correspondences and then performing least-squares regression on all inliers. Finally, the images were warped with the homography and overlapped in order to form a mosaic. The results of this project were a successful mosaic of two images, and a panorama of all images.
-
+</p>
+ 
 ## Algorithms
 ### Harris Corner Detection
 <img src="https://user-images.githubusercontent.com/47452095/228600945-72dd5604-6ca1-4bd3-91d6-1df873bdcdcf.png" width=20% height=20%>
